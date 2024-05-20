@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hotel Registration</title>
+    <link rel="stylesheet" href="../bheema/style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center">Hotel Registration form</h1>
+            <div class="container">
+                <div class="row">
+                
+                <div class="col-6">
+                    <h3>Customer details</h3>
+                    <div class="mb-1">
+                        <label for="exampleFormControlInput1" class="form-label">Customer Name</label>
+                        <input type="email" class="form-control" id="txtName" placeholder="Enter name">
+                    </div>
+                    <div class="mb-1">
+                        <label for="exampleFormControlInput1" class="form-label">Check in Date</label>
+                        <input type="date" class="form-control" id="txtDate" placeholder="Select date">
+                    </div>
+                    <div class="mb-1">
+                        <label for="exampleFormControlInput1" class="form-label"> Total No of Days</label>
+                        <input type="number" class="form-control" id="txtDays" placeholder="Please enter days">
+                    </div>
+                    <div class="mb-1">
+                        <label for="exampleFormControlInput1" class="form-label">Total No of persons</label>
+                        <input type="number" class="form-control" id="txtPerson"  for="flexRadioDefault1" placeholder="please enter persons count">
+                    </div>
+                </div>
+                <div class="col-6 mt-3">
+                    <h3>Select Room type</h3>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-check">
+                                <input type="radio" name="action" id="optDelux" value="delux" /><label for="delux" class="ml-3">Delux Room(2500/-)</label><br />
+                            </div>
+                            <div class="form-check">
+                                <img src="../bheema/images/back.jpg" class="img-size"/>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-check">
+                                <input type="radio" name="action" id="optSuite" value="suite" /><label for="suite" class="ml-3">Suite Room(4000/-)</label>
+                               
+                            </div>
+                            <div class="form-check">
+                                <img src="../bheema/images/images.jpeg" class="img-size"/>
+                            </div>
+                        </div>
+                        <h3>Select Amenities</h3>
+                        <div class="col-6">
+                            <div class="form-check">
+                                <input type="checkbox" class="mt-3 mr-2" name="action" id="optAc" value="ac" /><label for="ac">A/C(Extra charge 1000/-)</label><br />
+                            </div>
+                            <div class="form-check">
+                               
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-check">
+                                <input type="checkbox"  class="mt-3 mr-2"name="action" id="optLocker" value="locker" /><label for="locker">Locker(Extra charge 300/-)</label>
+                            </div>
+                        </div>
+                        <div class="col-12 ">
+                            <div class="mt-2">
+                                <label for="exampleFormControlInput1" class="form-label"><b>Advance Amount</b></label>
+                                <input type="number" class="form-control" id="txtAdvance" value="" placeholder="Please enter Advance">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 text-center mt-4">
+                    <p id="error" style="display:none;"><font color="red"><b><sup>*</sup>Please Enter Advance Amount</b></font></p>
+                    <button class=" btn btn-success" onclick="registerClick()">Register</button>
+                </div>
+                    <div class="col-6">
+                        <p><b> Customer Name:  </b><span id="lblName"></span></p>
+                        <p><b>Check in date:  </b><span id="lblDate"></span></p>
+                        <p><b>Advance Amount:  </b><span id="lblAdvance"></span></p>
+                        <p><b>Balance Amount:  </b><span id="lblTotal"></span></p>
+                    </div>
+                    <div class="col-6">
+                        <p><b> Total no of Days:  </b><span id="lblDays"></span></p>
+                        <p><b>Total no of Persons:  </b><span id="lblPerson"></span></p>
+                        <p><b>Room Type  </b><span id="lblRoom"></span></p>
+                        <p><b>Amenities:  </b><span id="lblAdon"></span></p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="../bheema/1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
